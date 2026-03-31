@@ -1,0 +1,17 @@
+<svg width="620" height="140" viewBox="0 0 620 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect x="8" y="8" width="124" height="124" rx="28" fill="url(#markGradient)"/>
+    <circle cx="70" cy="58" r="18" fill="#0D3566"/>
+    <path d="M94 85.5C80.7 98.8 59.2 98.8 45.9 85.5L37.6 93.8C55.5 111.7 84.5 111.7 102.4 93.8L94 85.5Z" fill="#0D3566"/>
+  </g>
+  <g fill="#123E72" font-family="'Plus Jakarta Sans', Arial, sans-serif">
+    <text x="156" y="66" font-size="52" font-weight="800" letter-spacing="-0.8">SouzaCosta</text>
+    <text x="158" y="98" font-size="21" font-weight="700" letter-spacing="2.8">BORRACHARIA E LAVA JATO</text>
+  </g>
+  <defs>
+    <linearGradient id="markGradient" x1="8" y1="8" x2="132" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E8FE3"/>
+      <stop offset="1" stop-color="#78BEFF"/>
+    </linearGradient>
+  </defs>
+</svg>
