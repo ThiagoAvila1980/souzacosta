@@ -25,10 +25,22 @@
             </a>
           </p>
           <div class="flex gap-3 mt-5 text-lg">
-            <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-lg bg-white/15 grid place-items-center">
+            <a
+              href="https://www.instagram.com/souzacostam216/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram SouzaCosta"
+              class="w-10 h-10 rounded-lg bg-white/15 grid place-items-center"
+            >
               <i class="pi pi-instagram"></i>
             </a>
-            <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/15 grid place-items-center">
+            <a
+              href="https://www.facebook.com/marcelo.sousacosta?locale=pt_BR"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook SouzaCosta"
+              class="w-10 h-10 rounded-lg bg-white/15 grid place-items-center"
+            >
               <i class="pi pi-facebook"></i>
             </a>
             <a
