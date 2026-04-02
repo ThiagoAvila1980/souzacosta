@@ -13,13 +13,22 @@
       aria-label="Falar no WhatsApp"
       class="whatsapp-float md:hidden"
     >
-      <i class="pi pi-whatsapp"></i>
+      <img
+        :src="whatsappIcon"
+        alt=""
+        width="56"
+        height="56"
+        class="whatsapp-float-img"
+        loading="lazy"
+        decoding="async"
+      />
     </a>
   </div>
 </template>
 
 <script setup>
 import { onBeforeUnmount, onMounted } from 'vue'
+import whatsappIcon from '../images/icone-whatsapp2.png'
 import SiteHeader from './components/SiteHeader.vue'
 import HeroSection from './components/HeroSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
