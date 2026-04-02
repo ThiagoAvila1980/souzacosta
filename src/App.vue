@@ -7,7 +7,7 @@
     <div class="reveal"><TestimonialsSection /></div>
     <div class="reveal"><SiteFooter /></div>
     <a
-      href="https://wa.me/55116792240786?text=Ol%C3%A1%2C%20quero%20agendar%20na%20SouzaCosta."
+      href="https://wa.me/55116792240786?text=Ol%C3%A1%2C%20quero%20agendar%20na%20Borracharia%20SouzaCosta%2E"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"

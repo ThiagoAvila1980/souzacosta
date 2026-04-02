@@ -44,7 +44,7 @@
               <i class="pi pi-facebook"></i>
             </a>
             <a
-              href="https://wa.me/55116792240786"
+              href="https://wa.me/55116792240786?text=Ol%C3%A1%2C%20quero%20agendar%20na%20Borracharia%20SouzaCosta%2E"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
@@ -60,11 +60,11 @@
           <ul class="mt-4 space-y-2 text-white/95">
             <li class="flex justify-between border-b border-white/15 pb-2">
               <span>Segunda a sexta</span>
-              <strong>7:15 - 17:30</strong>
+              <strong>07:15 - 17:30h</strong>
             </li>
             <li class="flex justify-between border-b border-white/15 pb-2">
               <span>Sábado</span>
-              <strong>08:00 - 12:00</strong>
+              <strong>08:00 - 12:00h</strong>
             </li>
             <li class="flex justify-between border-b border-white/15 pb-2">
               <span>Domingo</span>
