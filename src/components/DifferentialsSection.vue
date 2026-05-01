@@ -1,4 +1,5 @@
 <template>
+  <!-- Seção de diferenciais com prova visual em carrossel -->
   <section id="diferenciais" class="py-16 md:py-24 blue-gradient-soft">
     <div class="container-max">
       <SectionHeader
@@ -6,6 +7,7 @@
         lead="Agilidade, qualidade e conforto em cada atendimento."
       />
 
+      <!-- Três pilares principais de confiança da empresa -->
       <div class="grid md:grid-cols-3 gap-4 mt-10">
         <Card v-for="item in differentials" :key="item.title" class="service-card text-center">
           <template #content>
@@ -20,6 +22,7 @@
 
       <div class="mt-12">
         <h3 class="text-2xl font-bold text-slate-900 text-center">Serviço de Qualidade</h3>
+        <!-- Carrossel com imagens reais dos serviços -->
         <Carousel
           :value="beforeAfter"
           :numVisible="1"
@@ -71,6 +74,7 @@ const differentials = [
   }
 ]
 
+// Lista de imagens exibidas no carrossel da seção.
 const beforeAfter = [
   {
     alt: 'Serviço de borracharia com montagem de pneu',

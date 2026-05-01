@@ -1,11 +1,13 @@
 <template>
   <div class="min-h-screen">
+    <!-- Estrutura principal da landing page institucional -->
     <SiteHeader />
     <div class="reveal"><HeroSection /></div>
     <div class="reveal"><ServicesSection /></div>
     <div class="reveal"><DifferentialsSection /></div>
     <div class="reveal"><TestimonialsSection /></div>
     <div class="reveal"><SiteFooter /></div>
+    <!-- MOBILE: atalho de contato rápido (oculto no desktop com md:hidden) -->
     <a
       href="https://wa.me/55116792240786?text=Ol%C3%A1%2C%20quero%20agendar%20na%20Borracharia%20SouzaCosta%2E"
       target="_blank"
@@ -39,6 +41,7 @@ import SiteFooter from './components/SiteFooter.vue'
 let observer
 
 onMounted(() => {
+  // Anima cada bloco quando entra na área visível da tela.
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -55,6 +58,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
+  // Evita vazamento de memória ao sair da página.
   if (observer) observer.disconnect()
 })
 </script>

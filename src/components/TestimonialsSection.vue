@@ -1,4 +1,5 @@
 <template>
+  <!-- Seção de prova social com nota média e depoimentos -->
   <section id="depoimentos" class="py-16 md:py-24 bg-white">
     <div class="container-max">
       <SectionHeader
@@ -35,6 +36,7 @@ import Avatar from 'primevue/avatar'
 import SectionHeader from './SectionHeader.vue'
 
 const testimonials = [
+  // Depoimentos estáticos para reforçar confiança no atendimento.
   {
     initials: 'MR',
     name: 'Marina Ribeiro',

@@ -1,4 +1,5 @@
 <template>
+  <!-- Seção de serviços organizada em cards por categoria -->
   <section id="servicos" class="py-16 md:py-24 bg-white">
     <div class="container-max">
       <SectionHeader

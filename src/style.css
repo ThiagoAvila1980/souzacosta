@@ -3,18 +3,31 @@
 
 :root {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --brand-navy-950: #061a33;
+  --brand-navy-900: #0a2749;
+  --brand-navy-800: #103763;
+  --brand-blue-600: #1e5fa2;
+  --brand-blue-500: #2f77bf;
+  --brand-ice: #e9f3ff;
 }
 
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  color: #0f2540;
-  background: #f7fbff;
+  color: #0e2745;
+  background: #edf4fb;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.01em;
+  font-kerning: normal;
+  font-feature-settings: 'kern' 1;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 #app {
@@ -27,20 +40,25 @@ body {
 }
 
 .blue-gradient {
-  background: linear-gradient(150deg, #e8f3ff 0%, #b8dcff 42%, #3f8fdd 100%);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(59, 133, 214, 0.35), transparent 38%),
+    linear-gradient(140deg, var(--brand-navy-950) 0%, var(--brand-navy-900) 45%, var(--brand-navy-800) 100%);
 }
 
 .blue-gradient-soft {
-  background: linear-gradient(180deg, #f6fbff 0%, #e6f2ff 100%);
+  background: linear-gradient(180deg, #1e5fa2 0%, #ffffff 100%);
 }
 
 .glass-nav {
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(12, 39, 72, 0.85);
+  box-shadow: 0 8px 24px rgba(6, 26, 51, 0.2);
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .menu-link {
-  @apply py-2 px-1 border-b border-blue-100 hover:text-blue-700 transition-colors;
+  @apply py-2 px-1 border-b border-blue-200/40 hover:text-blue-100 transition-colors;
 }
 
 .section-title {
@@ -52,18 +70,19 @@ body {
 }
 
 .service-card {
-  @apply rounded-2xl border border-blue-100 bg-white/95 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg;
+  @apply rounded-2xl border border-blue-200/70 bg-white/95 shadow-md shadow-blue-900/5 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/10;
 }
 
 .p-button.brand-primary {
-  background: linear-gradient(135deg, #2e83d3 0%, #144884 100%);
+  background: linear-gradient(135deg, #184b86 0%, #0c2d53 100%);
   border: 0;
+  color: #fff;
 }
 
 .p-button.brand-outline {
-  background: transparent;
-  color: #1f5f9f;
-  border-color: #84b9ea;
+  background: rgba(255, 255, 255, 0.06);
+  color: #dcecff;
+  border-color: rgba(220, 236, 255, 0.58);
 }
 
 .p-card {
@@ -71,7 +90,8 @@ body {
 }
 
 .badge-pill {
-  @apply inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-semibold bg-white/75 text-blue-900 border border-blue-200;
+  @apply inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-semibold text-white border border-blue-100/35;
+  background: rgba(5, 24, 48, 0.38);
 }
 
 .google-rating {
@@ -97,6 +117,35 @@ body {
   z-index: 50;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
   border: 2px solid rgba(37, 211, 102, 0.35);
+}
+
+.header-link {
+  color: #dbeafe;
+}
+
+.header-link:hover {
+  color: #ffffff;
+}
+
+.hero-kicker {
+  color: rgba(224, 238, 255, 0.9);
+}
+
+.hero-title {
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(3, 14, 28, 0.28);
+}
+
+.hero-description {
+  color: #e3effc;
+}
+
+.hero-rating {
+  color: #edf5ff;
+}
+
+.hero-rating-sub {
+  color: #dcecff;
 }
 
 .whatsapp-float-img {
@@ -138,13 +187,16 @@ body {
 
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translate3d(0, 20px, 0);
   transition: opacity 0.7s ease, transform 0.7s ease;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
 }
 
 @keyframes shimmer {

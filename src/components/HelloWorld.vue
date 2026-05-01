@@ -1,4 +1,5 @@
 <script setup>
+// Componente padrão do template Vite/Vue (não utilizado na landing atual).
 import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'

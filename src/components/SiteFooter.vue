@@ -1,5 +1,10 @@
 <template>
-  <footer id="contato" class="text-white py-14" style="background-color: #4392de">
+  <!-- Rodapé com contatos, horários e mapa de localização -->
+  <footer
+    id="contato"
+    class="text-white py-14"
+    style="background: linear-gradient(145deg, #0b2a4f 0%, #103763 58%, #4392de 100%)"
+  >
     <div class="container-max">
       <div class="grid lg:grid-cols-3 gap-8">
         <div>
@@ -97,5 +102,6 @@
 </template>
 
 <script setup>
+// Mantém o ano atualizado automaticamente no copyright.
 const year = new Date().getFullYear()
 </script>
